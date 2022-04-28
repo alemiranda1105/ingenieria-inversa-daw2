@@ -7,9 +7,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { PlayersListComponent } from './components/players-list/players-list.component';
+import { PlayerCardComponent } from './components/player-card/player-card.component';
 
 @NgModule({
-  declarations: [AdminDashboardComponent, HeaderComponent, FooterComponent, HomeComponent, PlayersListComponent],
+  declarations: [AdminDashboardComponent, HeaderComponent, FooterComponent, HomeComponent, PlayersListComponent, PlayerCardComponent],
   imports: [CommonModule, AdminRoutingModule],
 })
 export class AdminModule {}

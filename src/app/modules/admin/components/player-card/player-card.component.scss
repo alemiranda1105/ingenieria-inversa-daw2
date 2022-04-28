@@ -1,0 +1,27 @@
+.player-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(169, 165, 165);
+    border-radius: 15px;
+    width: 20rem;
+    max-width: 300px;
+    margin: 1.25rem;
+    padding: 1.05rem;
+}
+
+.player-card .buttons {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.buttons button {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin: 5% 15px;
+}

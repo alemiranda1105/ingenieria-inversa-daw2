@@ -1,0 +1,26 @@
+<div *ngIf="player" class="player-card">
+    <h2>{{player.name}}</h2>
+    <small>{{player.position}}</small> <br />
+    <small>{{player.number}}</small>
+    <p>{{player.nacionality | titlecase}}</p>
+    <p *ngIf="player.international">Internacional</p>
+    <table>
+        <thead>
+            <th>Habilidad</th>
+            <th>Estadística</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let stat of player.stats | keyvalue">
+                <td>{{stat.key | titlecase}}</td>
+                <td>
+                    <h6>{{stat.value}}</h6>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="buttons">
+        <button class="btn btn-primary" id="details-btn">Detalles</button>
+        <button class="btn btn-secondary">Editar</button>
+        <button class="btn btn-danger">Eliminar</button>
+    </div>
+</div>
