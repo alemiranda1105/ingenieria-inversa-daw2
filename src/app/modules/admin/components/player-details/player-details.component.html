@@ -1,11 +1,10 @@
-<div *ngIf="player" class="player-card">
-    <h2>{{player.name}}</h2>
+<div class="container" *ngIf="player">
+    <h1>{{player.name}}</h1>
     <strong>{{player.number}}</strong>
     <small>{{player.position}}</small> <br />
     <p>{{player.nacionality | titlecase}}</p>
     <p *ngIf="player.international">Internacional</p>
     <div class="buttons">
-        <a [routerLink]="['details/' + player.id]" class="btn btn-primary">Detalles</a>
         <button class="btn btn-secondary">Editar</button>
         <button class="btn btn-danger">Eliminar</button>
     </div>

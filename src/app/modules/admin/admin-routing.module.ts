@@ -2,6 +2,7 @@ import { AdminDashboardComponent } from './components/admin-dashboard/admin-dash
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
+import { PlayerDetailsComponent } from './components/player-details/player-details.component';
 
 const routes: Routes = [
   {
@@ -9,6 +10,7 @@ const routes: Routes = [
     component: AdminDashboardComponent,
     children: [
       { path: 'home', component: HomeComponent },
+      { path: 'home/details/:id', component: PlayerDetailsComponent },
       { path: '', redirectTo: '/admin/home', pathMatch: 'full' },
     ],
   },
