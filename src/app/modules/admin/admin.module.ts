@@ -12,9 +12,10 @@ import { PlayerCardComponent } from './components/player-card/player-card.compon
 import { PlayerDetailsComponent } from './components/player-details/player-details.component';
 import { PlayerFormComponent } from './components/player-form/player-form.component';
 import { CreatePlayerComponent } from './pages/create-player/create-player.component';
+import { UpdatePlayerComponent } from './pages/update-player/update-player.component';
 
 @NgModule({
-  declarations: [AdminDashboardComponent, HeaderComponent, FooterComponent, HomeComponent, PlayersListComponent, PlayerCardComponent, PlayerDetailsComponent, PlayerFormComponent, CreatePlayerComponent],
+  declarations: [AdminDashboardComponent, HeaderComponent, FooterComponent, HomeComponent, PlayersListComponent, PlayerCardComponent, PlayerDetailsComponent, PlayerFormComponent, CreatePlayerComponent, UpdatePlayerComponent],
   imports: [CommonModule, AdminRoutingModule, ReactiveFormsModule],
 })
 export class AdminModule {}
