@@ -1,0 +1,57 @@
+<div class="container">
+    <form [formGroup]="playerForm" (ngSubmit)="onSubmit()" novalidate>
+        <div class="form-group m-2">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" placeholder="Name" formControlName="name">
+            <h5 *ngIf="this.playerForm.controls['name'].errors?.['required']" class="error-text">
+                A name is required
+            </h5>
+            <h5 *ngIf="this.playerForm.controls['name'].errors?.['minlength']" class="error-text">
+                The name must be longer
+            </h5>
+            <h5 *ngIf="this.playerForm.controls['name'].errors?.['maxlength']" class="error-text">
+                The name must be shorter
+            </h5>
+        </div>
+        <div class="form-group m-2">
+            <label for="position">Position</label>
+            <input type="text" class="form-control" placeholder="Position" formControlName="position">
+            <h5 *ngIf="this.playerForm.controls['position'].errors?.['required']" class="error-text">
+                A position is required
+            </h5>
+            <h5 *ngIf="this.playerForm.controls['position'].errors?.['minlength']" class="error-text">
+                The position name must be longer
+            </h5>
+            <h5 *ngIf="this.playerForm.controls['position'].errors?.['maxlength']" class="error-text">
+                The position name must be shorter
+            </h5>
+        </div>
+        <div class="form-group m-2">
+            <label for="number">Number</label>
+            <input type="number" max="99" min="1" class="form-control" placeholder="Number" formControlName="number">
+            <h5 *ngIf="this.playerForm.controls['number'].errors?.['required']" class="error-text">
+                A number is required
+            </h5>
+            <h5 *ngIf="this.playerForm.controls['number'].errors?.['min']" class="error-text">
+                The number must be greater
+            </h5>
+            <h5 *ngIf="this.playerForm.controls['number'].errors?.['max']" class="error-text">
+                The number must be smaller
+            </h5>
+        </div>
+        <div class="form-group m-2">
+            <label for="nacionality">Nacionality</label>
+            <input type="text" class="form-control" placeholder="Nacionality" formControlName="nacionality">
+            <h5 *ngIf="this.playerForm.controls['nacionality'].errors?.['required']" class="error-text">
+                A nacionality is required
+            </h5>
+        </div>
+        <div class="form-group m-2">
+            <div class="form-check">
+                <input type="checkbox" name="international" id="international" class="form-check-input" formControlName="international">
+                <label for="international" class="form-check-label">International</label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary m-3">Submit</button>
+    </form>
+</div>

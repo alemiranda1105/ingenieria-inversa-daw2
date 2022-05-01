@@ -1,8 +1,11 @@
 <div class="container" *ngIf="player">
-    <h1>{{player.name}}</h1>
-    <strong>{{player.number}}</strong>
-    <small>{{player.position}}</small> <br />
-    <p>{{player.nacionality | titlecase}}</p>
+    <h1>{{player.name | titlecase}}</h1>
+    <h3>Number:</h3>
+    <h4>{{player.number}}</h4>
+    <h3>Position:</h3>
+    <h4>{{player.position}}</h4>
+    <h3>Nacionality</h3>
+    <h4>{{player.nacionality | titlecase}}</h4>
     <p *ngIf="player.international">Internacional</p>
     <div class="buttons">
         <button class="btn btn-secondary">Editar</button>

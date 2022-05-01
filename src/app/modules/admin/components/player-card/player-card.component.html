@@ -1,5 +1,5 @@
 <div *ngIf="player" class="player-card">
-    <h2>{{player.name}}</h2>
+    <h2>{{player.name | titlecase}}</h2>
     <strong>{{player.number}}</strong>
     <small>{{player.position}}</small> <br />
     <p>{{player.nacionality | titlecase}}</p>
