@@ -9,6 +9,6 @@
     <p *ngIf="player.international">Internacional</p>
     <div class="buttons">
         <a [routerLink]="['/admin/home/edit/' + player.id]" class="btn btn-secondary">Editar</a>
-        <button class="btn btn-danger">Eliminar</button>
+        <button class="btn btn-danger" (click)="deletePlayer()">Eliminar</button>
     </div>
 </div>

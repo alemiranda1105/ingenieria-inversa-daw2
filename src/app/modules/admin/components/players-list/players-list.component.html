@@ -1,5 +1,5 @@
 <div class="container">
     <div *ngFor="let p of players">
-        <app-player-card [player]="p"></app-player-card>
+        <app-player-card [player]="p" (deletePlayerEvent)="deletePlayer($event)"></app-player-card>
     </div>
 </div>

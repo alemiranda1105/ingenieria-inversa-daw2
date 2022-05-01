@@ -13,8 +13,21 @@ export class PlayersListComponent implements OnInit {
   constructor(private playerService: PlayerService) { }
 
   ngOnInit(): void {
+    this.getPlayers();
+  }
+
+  getPlayers(): void {
     this.playerService.getAllPlayers()
     .subscribe(players => this.players = players);
+  }
+
+  deletePlayer(id: string):void {
+    this.playerService.deletePlayer(id)
+    .subscribe(res => {
+      if(res) {
+        this.getPlayers();
+      }
+    })
   }
 
 }

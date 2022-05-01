@@ -26,4 +26,13 @@ export class PlayerDetailsComponent implements OnInit {
     .subscribe( player => this.player = player );
   }
 
+  deletePlayer(): void {
+    this.playerService.deletePlayer(this.player!.id)
+    .subscribe(res => {
+      if(res) {
+        this.router.navigate(['/']);
+      }
+    })
+  }
+
 }
