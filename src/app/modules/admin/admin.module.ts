@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AdminRoutingModule } from './admin-routing.module';
 import { AdminDashboardComponent } from './components/admin-dashboard/admin-dashboard.component';
@@ -16,6 +17,6 @@ import { UpdatePlayerComponent } from './pages/update-player/update-player.compo
 
 @NgModule({
   declarations: [AdminDashboardComponent, HeaderComponent, FooterComponent, HomeComponent, PlayersListComponent, PlayerCardComponent, PlayerDetailsComponent, PlayerFormComponent, CreatePlayerComponent, UpdatePlayerComponent],
-  imports: [CommonModule, AdminRoutingModule, ReactiveFormsModule],
+  imports: [CommonModule, AdminRoutingModule, ReactiveFormsModule, NgbCollapseModule],
 })
 export class AdminModule {}
