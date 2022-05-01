@@ -1,27 +1,45 @@
-# IngenieriaInversaDaw2
+# TodoApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
+App de administración de jugadores para un equipo creada para la asignatura de Desarrollo de Aplicaciones Web II
 
-## Development server
+## ¿Cómo probar?
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Para probar este sitio web hay que ejecutar los siguientes comandos:
+1. Primero instalamos los paquetes necesarios:
+`npm install`
+2. Ejecutamos:
+`ng serve --open`
+3. Abrimos la siguiente URL en caso de que no se abra automaticamente con el comando anterior: [localhost:4200](http://localhost:4200/)
 
-## Code scaffolding
+## Tecnologías usadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* Angular
+* Typescript
 
-## Build
+# Documentación
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Para poder usar este sitio web se debe iniciar sesión como administrador.
 
-## Running unit tests
+## ¿Cómo iniciar sesión?
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Abrimos el sitio web
+2. Introducimos los datos de nuestra cuenta
+    - **usuario:** admin@gmail.com
+    - **contraseña**: admindaw2
+3. Ya podremos usar el sitio
 
-## Running end-to-end tests
+## ¿Como ver la lista de jugadores? 
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Tras haber iniciado sesión, lo primero que se verá será la lista de los jugadores actuales. <br />
+Para editar la lista, debemos pulsar el botón de editar en la página de detalles o desde la propia lista. Lo mismo ocurre para eliminar el jugador.
 
-## Further help
+## ¿Cómo añadir un nuevo jugador?
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Para añadir un nuevo jugador simplemente se ha de pulsar en el botón de la barra de navegación *Add player* y se mostrará el formulario para ello. En este formulario, **todos** los campos son obligatorios
+
+# Autor
+
+__Alejandro Miranda López__
+
+_4º Grado de Ingeniería Informática, Universidad de Las Palmas de Gran Canaria_
+_2021/2022_
